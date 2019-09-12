@@ -1,1 +1,39 @@
-// Navigation Styles here
+// Navigation Styles 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1%;
+    border-bottom: 1px dashed gray;
+    .logo{
+        width: 20%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: blue;
+            }
+        }
+        
+    }
+
+    @media screen and (max-width: 500px){
+        flex-direction: column;
+        .logo{
+            width: 100%;
+            text-align: center;
+        }
+        nav{
+            width:100%;
+        }
+    }
+}//nav
