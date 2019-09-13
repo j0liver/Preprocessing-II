@@ -1,12 +1,20 @@
 .footer {
-  width: 100%;
-  border-top: 2px dashed silver;
+  width: 1000px;
+  border-top: 2px dashed @navigation-border;
   background: @sandy-beach;
+  margin: auto;
   
   p {
     text-align: center;
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+  }
+
+  @media @phone{
+    width: 100%;
+    p{
+      margin: auto;
+    }
   }
 }
