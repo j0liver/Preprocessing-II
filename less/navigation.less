@@ -1,24 +1,29 @@
 // Navigation Styles 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    margin: 2% auto;
+    max-width: 1000px;
     font-size: 1.5rem;
-    margin-top: 1%;
-    border-bottom: 1px dashed gray;
-    .logo{
-        width: 20%;
-    }
+    // margin-top: 1%;
+    border-bottom: 2px dashed @navigation-border;
+    
     nav{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 60%;
-        a{
-            text-decoration: none;
-            color: black;
+        width: 800px;
+        margin: auto;
+        .logo{
+            width: 35%;
+        }
+        .links{
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
 
+            a{
+                text-decoration: none;
+                color: black;
+            }
             &:hover{
                 color: blue;
             }

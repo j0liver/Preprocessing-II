@@ -174,28 +174,31 @@ img {
   }
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  margin: 2% auto;
+  max-width: 1000px;
   font-size: 1.5rem;
-  margin-top: 1%;
-  border-bottom: 1px dashed gray;
-}
-header .logo {
-  width: 20%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 800px;
+  margin: auto;
 }
-header nav a {
+header nav .logo {
+  width: 35%;
+}
+header nav .links {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav .links a {
   text-decoration: none;
   color: black;
 }
-header nav a:hover {
+header nav .links:hover {
   color: blue;
 }
 @media screen and (max-width: 500px) {
@@ -211,9 +214,10 @@ header nav a:hover {
   }
 }
 .footer {
-  width: 100%;
-  border-top: 2px dashed silver;
+  width: 1000px;
+  border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
+  margin: auto;
 }
 .footer p {
   text-align: center;
@@ -227,7 +231,7 @@ header nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .hero .hero-text {
   margin-top: 2%;
@@ -322,7 +326,7 @@ header nav a:hover {
     justify-content: center;
   }
   .home .content-pick .destination {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
