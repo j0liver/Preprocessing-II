@@ -225,6 +225,14 @@ header nav .links:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+  }
+  .footer p {
+    margin: auto;
+  }
+}
 .home .hero {
   max-width: 100%;
   display: flex;
